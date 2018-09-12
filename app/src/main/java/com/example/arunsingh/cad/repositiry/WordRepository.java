@@ -6,7 +6,7 @@ import android.os.AsyncTask;
 
 import com.example.arunsingh.cad.dao.WordDAO;
 import com.example.arunsingh.cad.database.WordDatabase;
-import com.example.arunsingh.cad.model.Word;
+import com.example.arunsingh.cad.model.local.Word;
 
 import java.util.List;
 

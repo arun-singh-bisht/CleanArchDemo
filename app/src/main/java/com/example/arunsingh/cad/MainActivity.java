@@ -1,24 +1,19 @@
 package com.example.arunsingh.cad;
 
-import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.View;
 
 import com.example.arunsingh.cad.adapters.WordAdapter;
-import com.example.arunsingh.cad.model.Word;
+import com.example.arunsingh.cad.model.local.Word;
 import com.example.arunsingh.cad.viewmodel.WordViewModel;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -46,11 +41,19 @@ public class MainActivity extends AppCompatActivity {
         initRecycleView();
     }
 
-    @OnClick(R.id.fab)
-    public void onFabClick()
+    @OnClick(R.id.btn_add_new_word)
+    public void onAddNewWord()
     {
         //Open New Activity To Add new Item
         Intent intent = new Intent(MainActivity.this,AddWordActivity.class);
+        startActivityForResult(intent,REQUEST_CODE_ADD_NEW_WORD);
+    }
+
+    @OnClick(R.id.btn_show_movies)
+    public void onShowMovies()
+    {
+        //Open New Activity To Add new Item
+        Intent intent = new Intent(MainActivity.this,MoviesActivity.class);
         startActivityForResult(intent,REQUEST_CODE_ADD_NEW_WORD);
     }
 

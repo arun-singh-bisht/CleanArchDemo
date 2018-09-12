@@ -2,11 +2,10 @@ package com.example.arunsingh.cad.dao;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
-import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
-import com.example.arunsingh.cad.model.Word;
+import com.example.arunsingh.cad.model.local.Word;
 
 import java.util.List;
 

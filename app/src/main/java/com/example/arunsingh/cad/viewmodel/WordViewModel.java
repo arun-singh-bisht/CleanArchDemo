@@ -5,7 +5,7 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
-import com.example.arunsingh.cad.model.Word;
+import com.example.arunsingh.cad.model.local.Word;
 import com.example.arunsingh.cad.repositiry.WordRepository;
 
 import java.util.List;

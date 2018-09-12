@@ -11,16 +11,44 @@
         android:id="@+id/recycler_view"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_tab"
+        />
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_add"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_margin="26dp" />
+   <LinearLayout
+       android:id="@+id/bottom_tab"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal"
+       android:weightSum="2"
+       >
+
+       <TextView
+           android:id="@+id/btn_add_new_word"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="Add New Word"
+           android:layout_weight="1"
+           android:textColor="#000000"
+           android:gravity="center"
+           android:padding="15dp"
+           android:background="#d27878"
+           />
+
+       <TextView
+           android:id="@+id/btn_show_movies"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="Show Movies"
+           android:layout_weight="1"
+           android:textColor="#000000"
+           android:gravity="center"
+           android:padding="15dp"
+           android:background="#86cc89"
+           />
+
+   </LinearLayout>
 
 </RelativeLayout>

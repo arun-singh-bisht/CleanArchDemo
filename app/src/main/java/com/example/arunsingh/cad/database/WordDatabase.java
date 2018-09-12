@@ -6,7 +6,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
 import com.example.arunsingh.cad.dao.WordDAO;
-import com.example.arunsingh.cad.model.Word;
+import com.example.arunsingh.cad.model.local.Word;
 
 /**
  * Created by Arun.Singh on 9/11/2018.

@@ -1,4 +1,4 @@
-package com.example.arunsingh.cad.model;
+package com.example.arunsingh.cad.model.local;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
